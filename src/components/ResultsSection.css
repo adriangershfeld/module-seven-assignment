@@ -1,0 +1,62 @@
+.results-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-light);
+}
+
+.result-message {
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.result-message.correct {
+  background-color: rgba(3, 218, 198, 0.1);
+  border-left: 3px solid var(--success-color);
+}
+
+.result-message.incorrect {
+  background-color: rgba(207, 102, 121, 0.1);
+  border-left: 3px solid var(--error-color);
+}
+
+.answer-details {
+  margin-top: 15px;
+  text-align: left;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.answer-details p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.answer-details p:last-child {
+  margin-bottom: 0;
+}
+
+.reset-btn {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 14px;
+  background: linear-gradient(45deg, var(--primary-dark), var(--primary-color));
+  box-shadow: 0 4px 15px rgba(156, 39, 176, 0.4);
+}
+
+.reset-btn:hover {
+  background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+}

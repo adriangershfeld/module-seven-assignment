@@ -1,0 +1,74 @@
+.question-form h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-light);
+}
+
+.question-text {
+  background-color: rgba(156, 39, 176, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  border-left: 3px solid var(--primary-light);
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.answer-option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(156, 39, 176, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.answer-option:hover {
+  background-color: rgba(156, 39, 176, 0.15);
+}
+
+.answer-option input[type="radio"] {
+  margin-right: 12px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-color);
+}
+
+.answer-option label {
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.form-error {
+  color: var(--error-color);
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 14px;
+  background: linear-gradient(45deg, var(--primary-dark), var(--primary-color));
+  box-shadow: 0 4px 15px rgba(156, 39, 176, 0.4);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+}

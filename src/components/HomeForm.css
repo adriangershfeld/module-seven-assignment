@@ -1,0 +1,91 @@
+.home-form h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-light);
+  text-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+}
+
+.instructions {
+  background-color: rgba(156, 39, 176, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border-left: 3px solid var(--primary-light);
+}
+
+.instructions p {
+  margin-bottom: 10px;
+}
+
+.instructions ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.instructions li {
+  margin-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--primary-light);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: rgba(30, 30, 30, 0.8); /* Darker background for better contrast */
+  border: 1px solid var(--primary-dark);
+  color: var(--text-light);
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+/* Make dropdown options readable */
+.form-group select option {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+}
+
+.form-group input.error,
+.form-group select.error {
+  border-color: var(--error-color);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 14px;
+  background: linear-gradient(45deg, var(--primary-dark), var(--primary-color));
+  box-shadow: 0 4px 15px rgba(156, 39, 176, 0.4);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+}
